@@ -1,0 +1,7 @@
+def checkPalindrome(inputString):
+    s2=inputString[::-1]
+    if s2==inputString:
+        return True
+    else:
+        return False
+
