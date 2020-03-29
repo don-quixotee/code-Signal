@@ -1,0 +1,14 @@
+def isLucky(n):
+    m = str(n)
+    x = m[0:len(m)//2]
+    y = m[len(m)//2:len(m)]
+    s1 = 0
+    s2 = 0
+    for i in x:
+        s1 = s1 + int(i)
+    for i in y:
+        s2 = s2 + int(i)
+    if s1 == s2:
+        return True
+    return False
+   
