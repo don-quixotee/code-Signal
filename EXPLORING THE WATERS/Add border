@@ -1,0 +1,10 @@
+def addBorder(picture):
+    r = []
+    border = ""
+    for i in range(len(picture[0])+2):
+        border += "*"
+    r.append(border)
+    for i in range(len(picture)):
+        r.append("*"+picture[i]+"*")
+    r.append(border)
+    return r
