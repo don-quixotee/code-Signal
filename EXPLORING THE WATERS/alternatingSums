@@ -1,0 +1,12 @@
+def alternatingSums(a):
+    suma = []
+    x = 0
+    y = 0
+    for i in range(len(a)):
+        if i%2 == 0:
+            x = x + a[i]
+        else:
+            y = y + a[i]
+    suma.append(x)
+    suma.append(y)
+    return suma
