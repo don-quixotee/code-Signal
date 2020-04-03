@@ -1,9 +1,11 @@
+ 
 def palindromeRearranging(inputString):
-    char_occurance = []
-    for Is in inputString:
-        if Is not in char_occurance:
-            char_occurance.append(inputString.count(Is))
-    odd_occurance = [i for i in char_occurance if i%2!=0]
-    if len(odd_occurance) >1:
-        return False
-    return True
+     char_occurance = []
+#     for Is in inputString:
+#         if Is not in char_occurance:
+     for Is in set(inputString):
+         char_occurance.append(inputString.count(Is))
+     odd_occurance = [i for i in char_occurance if i%2!=0]
+     if len(odd_occurance) >1:
+         return False
+     return True
