@@ -1,0 +1,12 @@
+def arrayChange(arr):
+    moves = 0
+    for i in range(len(arr)-1):
+        first = arr[i]
+        nextt = arr[i+1]
+
+        if first >= nextt:
+            tmp = first - nextt + 1
+            arr[i+1] += tmp
+            moves += tmp
+    return moves
+        
