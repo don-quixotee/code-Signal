@@ -1,0 +1,7 @@
+def isIPv4Address(inputString):
+    ip = inputString.split('.')
+    if any (n.startswith('0') and len(n)>=2 for n in ip):
+        return False
+    else: 
+
+         return len(ip) == 4 and all(n.isdigit() and 0 <= int(n) < 256 for n in ip)
