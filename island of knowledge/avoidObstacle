@@ -1,0 +1,7 @@
+def avoidObstacles(inputArray):
+    for i in range(2, max(inputArray)+1):
+        num = any([x for x in inputArray if not x%i])
+        
+        if not  num:
+            return i
+    return max(inputArray)+1
