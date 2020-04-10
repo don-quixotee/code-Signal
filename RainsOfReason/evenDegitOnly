@@ -1,0 +1,7 @@
+def evenDigitsOnly(n):
+    iseven = ([int(x) for x in str(n) if  int(x)%2])
+    if iseven:
+        return False
+    return True
+
+
