@@ -1,0 +1,11 @@
+def alphabeticShift(inputString):
+    c =""
+    new_str = ""
+    num = [ord(x) for x in inputString]
+    for i in range(len(num)):
+        if num[i] == 122:
+            num[i]=chr(97)
+        else:
+            num[i] = chr(num[i]+1)
+    new_str= c.join(num)
+    return new_str
