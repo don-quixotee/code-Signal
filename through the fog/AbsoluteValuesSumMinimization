@@ -1,0 +1,10 @@
+def absoluteValuesSumMinimization(a):
+    b = []
+    for x in a:
+        numsum = 0
+        for y in a:
+            numsum = numsum + abs(y-x)
+        b.append(numsum)
+    return a[b.index(min(b))]
+
+
