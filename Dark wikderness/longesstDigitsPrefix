@@ -1,0 +1,9 @@
+def longestDigitsPrefix(inputString):
+    outputString = ''
+    for i in inputString:
+        if i.isdigit():
+            outputString = outputString + i
+        else:
+            return outputString
+
+    return outputString
